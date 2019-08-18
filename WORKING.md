@@ -41,14 +41,17 @@
     ### function definition
 
         * main function
-            * add the event listner to each div of img so that when anyone is clicked call the function and send the value of Rock clicked send the r value to game function to take user input
+            * add the event listner to each div of img so that when anyone is clicked call
+            * the function and send the value of Rock clicked send the r value to game function to take user input
 
 
         * game Function
-            * call the computer choice and get the userchoice and compare and call the update score function send 1 if computer wins to update score
+            * call the computer choice and get the userchoice and compare and call the update score
+            * function send 1 if computer wins to update score
 
         * computer choice
-            * choose between three vaues :- r,p,s using random function and return s the value
+            * choose between three vaues :- r,p,s using random function and returns the value
 
         * updateScores
-            * receive two values 0 or 1 if computer wins 1 if user wins 0 based on that add the value to score + new value
+            * receive two values 0 or 1 if computer wins 1 if user wins 0 based on that
+            * add the value to score + new value
