@@ -13,6 +13,7 @@ var result_div = document.querySelector(".result>p");
 var rock_div = document.getElementById("r");
 var paper_div = document.getElementById("p");
 var scissor_div = document.getElementById("s");
+var reset_score = document.getElementById("reset");
 
 function updateScores(whowins) {
   //console.log("printing user score  "+userScore_span.innerHTML);
@@ -73,6 +74,12 @@ function game(userchoice) {
   }
 }
 
+function reset(){
+    userScore_span.innerHTML=0;
+    computerScore_span.innerHTML=0;
+}
+
+
 function main() {
   rock_div.addEventListener("click", function() {
     //console.log("rock is being clicked");
@@ -101,6 +108,8 @@ function main() {
     var audio = document.getElementById("audio");
     audio.play();
   });
+  reset_score.addEventListener("click", function() {
+    reset();
+  });
 }
-
 main();
