@@ -105,6 +105,7 @@ function main() {
   });
 
   scissor_div.addEventListener("click", function Play() {
+    // play function
     var audio = document.getElementById("audio");
     audio.play();
   });
